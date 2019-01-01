@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C2FFA4"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/question_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What have you done today, "
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#373836"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:paddingRight="220dp"
+        android:paddingTop="15dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/Recycle_text_view"
+        android:text="Recycle"
+
+        android:layout_below="@id/question_text_view"/>
+    <EditText
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:inputType="number"
+
+        android:textSize="20sp"
+        android:layout_below="@id/question_text_view"
+        android:layout_toRightOf="@id/Recycle_text_view"
+        android:background="@android:color/white"
+        android:id="@+id/Recycle_edit_view"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/Walk_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Recycle_text_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:paddingRight="178dp"
+        android:text="Walk or Bike"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:id="@+id/walk_edit_view"
+        android:layout_below="@id/Recycle_edit_view"
+        android:layout_toRightOf="@id/Walk_text_view"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+    <TextView
+    android:id="@+id/Sustainable_text_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/Walk_text_view"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="9dp"
+    android:gravity="center_horizontal"
+    android:paddingTop="30dp"
+    android:paddingRight="178dp"
+    android:text="Sustainable Practice"
+    android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/walk_edit_view"
+        android:layout_marginLeft="-71dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sustainable_edit_text"
+        android:layout_toRightOf="@id/Sustainable_text_view"
+        android:background="@android:color/white"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/multi_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sustainable_text_view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="30dp"
+        android:paddingRight="178dp"
+        android:text="Used multi-use item"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/sustainable_edit_text"
+        android:layout_marginLeft="-71dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/multi_edit_view"
+        android:layout_toRightOf="@id/Sustainable_text_view"
+        android:background="@android:color/white"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="146dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/buttonshape"
+        android:text="Submit"
+        android:textColor="#373836"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/leader_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/buttonshape"
+        android:text="Leaderboard"
+        android:textColor="#373836"
+         />
+
+
+</RelativeLayout>

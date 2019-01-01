@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C2FFA4"
+    tools:context=".ThirdActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="#373836"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginBottom="50dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:inputType="textEmailAddress"
+        android:id="@+id/newusername_edit_text"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:id="@+id/newemail_edit_text"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/newpassword_edit_text"
+        android:hint="EnterPassword"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/finish_btn"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:textColor="#373836"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"/>
+
+
+</LinearLayout>
